@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "development": "nodemon",
-    "start": "node ./dist/server.generated.js"
+    "start": "webpack --mode=production --config webpack.client.config.js && webpack --mode=production --config webpack.server.config.js && node ./dist/server.generated.js"
   },
   "keywords": [],
   "author": "",
