@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--  <link href="./resources/css/styles.css" rel="stylesheet" /> -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <h2 class="appTitle">Welcome to our NodeMailer App</h2>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Projects</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form  method="post" name="contactForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                </br>
+                <input type="text" class="form-control" id="name" placeholder="your name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                </br>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                </br>
+                <input type="text" class="form-control" id="subject" aria-describedby="subject"
+                    placeholder="Enter subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="textarea">Message (Optional)</label>
+                </br>
+                <textarea class="form-control" id="textarea" rows="3" name="textarea"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fileData">Example file input</label>
+                </br>
+                <input type="file" accept="image/*,.pdf, .docx, .doc, .xlsx, .xls" multiple  
+                     id="file" name="file">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+</body>
+<script src="/dist/main.bundle.js"></script>
+
+</html>

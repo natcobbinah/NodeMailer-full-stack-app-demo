@@ -1,0 +1,56 @@
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: "Poppins", "Helvetica";
+    margin: 0 auto;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #23d;
+    padding: 2rem;
+}
+
+header nav ul li{
+    text-decoration: none;
+    color: #fff;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+main form .form-group{
+    padding: 0.7rem;
+}
+
+main form .form-group input{
+    padding: 0.4rem;
+    width: 30rem;
+}
+
+main form .form-group textarea{
+    padding: 0.4rem;
+    width: 30rem;
+}
+
+main form .form-group input[type=file]{
+    border: 1px solid black;
+}
+
+main form button{
+    width: 31rem;
+    padding: 0.4rem;
+}
