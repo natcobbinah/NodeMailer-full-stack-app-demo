@@ -5,26 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <!--  <link href="./resources/css/styles.css" rel="stylesheet" /> -->
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>NodeMailer App Demo</title>
+    <!--  <link href="./resources/css/styles.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
-    <h2 class="appTitle">Welcome to our NodeMailer App</h2>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Projects</li>
-            </ul>
-        </nav>
-    </header>
+    <h2 class="appTitle">Welcome to our NodeMailer App Demo</h2>
 
     <main>
-        <form  method="post" name="contactForm" enctype="multipart/form-data">
+        <form method="post" name="contactForm" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Your Name</label>
                 </br>
@@ -50,8 +40,7 @@
             <div class="form-group">
                 <label for="fileData">Example file input</label>
                 </br>
-                <input type="file" accept="image/*,.pdf, .docx, .doc, .xlsx, .xls" multiple  
-                     id="file" name="file">
+                <input type="file" accept="image/*,.pdf, .docx, .doc, .xlsx, .xls" multiple id="file" name="file">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
